@@ -7,11 +7,14 @@
   --ff: 'Outfit', sans-serif;
   --ff-400: 400;
   --ff-700: 700;
+
+  --br-10: 15px;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -23,24 +26,34 @@ body {
 }
 
 .qr-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 1rem;
   width: 320px;
   height: 497px;
-  border-radius: 10px;
+  border-radius: var(--br-10);
   background-color: var(--primary-white);
+  text-align: center;
 }
 
 .qr-code {
-  margin: auto;
-  width: 288px;
+  border-radius: var(--br-10);
+  width: 100%;
 }
 
 p {
+  padding: 0 1rem;
   font-family: var(--ff);
 }
 
 .bold {
   color: var(--dark-blue);
+  font-weight: var(--ff-700);
+  font-size: 1.4rem;
 }
 
 .undertext {
+  color: var(--gray-blue);
+  padding-bottom: 1.5rem;
 }
