@@ -1,8 +1,8 @@
 :root {
   --primary-white: hsl(0, 0%, 100%);
-  --secondary-gray: hsl(212, 45%, 89%);
+  --secondary-gray: hsl(220, 15%, 55%);
   --dark-blue: hsl(218, 44%, 22%);
-  --gray-blue: hsl(220, 15%, 55%);
+  --gray-blue: hsl(212.31, 44.83%, 88.63%);
 
   --ff: 'Outfit', sans-serif;
   --ff-400: 400;
@@ -55,5 +55,5 @@ p {
 }
 
 .undertext {
-  color: var(--gray-blue);
+  color: var(--secondary-gray);
 }
