@@ -8,7 +8,7 @@
   --ff-400: 400;
   --ff-700: 700;
 
-  --br-10: 15px;
+  --br-15: 15px;
 }
 
 * {
@@ -26,19 +26,20 @@ body {
 }
 
 .qr-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.4rem;
   padding: 1rem;
   width: 320px;
   height: 497px;
-  border-radius: var(--br-10);
+  border-radius: var(--br-15);
   background-color: var(--primary-white);
   text-align: center;
 }
 
+.qr-container > * {
+  margin-bottom: 1.1rem;
+}
+
 .qr-code {
-  border-radius: var(--br-10);
+  border-radius: var(--br-15);
   width: 100%;
 }
 
@@ -55,5 +56,4 @@ p {
 
 .undertext {
   color: var(--gray-blue);
-  padding-bottom: 1.5rem;
 }
